@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.saadyousfi.e_commerce.creer_compte"
+    android:background="@drawable/gradient">
+
+
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TableLayout
+            android:id="@+id/activity_creer_compte"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+
+            <TextView
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:text="PROFILE INFO"
+                android:textColor="@android:color/background_light" />
+
+            <TableRow>
+                <TextView
+                    android:text="Nom"
+                    android:width="100dp"
+                    android:layout_column="0"
+
+
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/nom"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Prenom"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/prenom"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Date de Naissance"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/date_naiss"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    android:inputType="date">
+
+                </EditText>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Adresse"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/adresse"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    android:lines="2"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="GSM"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/gsm"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    android:inputType="phone"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Email"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/email"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    />
+
+            </TableRow>
+            <TextView
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:text="AUTHENTIFICATION  INFO"
+                android:textColor="@android:color/background_light" />
+
+            <TableRow>
+                <TextView
+                    android:text="Login"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/login"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Mot de passe"
+                    android:width="100dp"
+                    android:layout_column="0"
+                    />
+                <EditText
+                    android:width="250dp"
+                    android:id="@+id/passCreerCpt"
+                    android:layout_column="1"
+                    android:layout_span="3"
+                    android:inputType="textPassword"
+                    />
+
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:text="ok"
+                    android:layout_column="1"
+                    android:id="@+id/ok"/>
+                <Button
+                    android:text="cancel"
+                    android:layout_column="3"
+                    android:id="@+id/cancel"/>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

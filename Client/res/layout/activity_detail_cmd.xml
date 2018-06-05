@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TableLayout
+        android:id="@+id/activity_etat_cmd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <TextView
+            android:background="@android:color/holo_blue_light"
+            android:gravity="center"
+            android:text="INFO COMMANDE"
+            android:textColor="@android:color/background_light" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:width="60dp"
+                android:gravity="right"
+                android:text="Date de debut"
+
+                />
+            <TextView
+                android:id="@+id/adresse"
+                android:text="-"
+                android:textColor="#006600"
+                android:layout_width="190dp"
+                />
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <TableRow>
+
+            <TextView
+                android:layout_column="0"
+                android:width="60dp"
+                android:gravity="right"
+                android:text="Date de fin"
+
+                />
+            <TextView
+                android:id="@+id/livreur"
+                android:text="-"
+                android:textColor="#006600"
+                android:layout_width="190dp"
+                />
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <TableRow>
+            <TextView
+                android:text="Date "
+                android:width="60dp"
+                android:gravity="right"
+                android:layout_column="0"
+
+                />
+            <TextView
+                android:id="@+id/date"
+                android:text="-"
+                android:textColor="#006600"
+                android:layout_width="190dp"
+                />
+        </TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <TableRow>
+            <TextView
+                android:text="Etat "
+                android:width="60dp"
+                android:gravity="right"
+                android:layout_column="0"
+
+                />
+            <TextView
+                android:id="@+id/etat"
+                android:text="-"
+                android:textColor="@color/colorAccent"
+                android:layout_width="190dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/myscrollview">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/tableProduits">
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/retourner"
+            android:background="@null"
+            android:id="@+id/btn_back"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:text="TOTAL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:text="0 DH"
+            android:textColor="@color/colorAccent"
+            android:textSize="24dp"
+            android:gravity="right"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
